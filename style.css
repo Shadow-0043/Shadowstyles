@@ -9,19 +9,18 @@ body {
   }
   header {
     background-color: white;
-    padding: 20px 0;
+    padding: 6px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-  } 
+  }
   .home{
-    color: chocolate;
+    color: #f9b001;
   }
   a{
     color: white;
     text-decoration: none;
   }
   a:hover{
-    color: chocolate;
+    color: #f9b001;
   }
   
   .container-hero {
@@ -42,7 +41,7 @@ body {
   }
   
   .text span:nth-child(2) {
-    color: chocolate; /* Chocolate */
+    color: #f9b001; /* Chocolate */
     font-size: 64px;
   }
   
@@ -52,7 +51,7 @@ body {
   }
   
   .text span:last-child {
-    color: chocolate; /* chocolate */
+    color: #f9b001; /* chocolate */
     font-size: 64px;
   }
   .model{
@@ -63,13 +62,17 @@ body {
 
   .logo {
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .logos{
-    max-width: 75px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+    max-width: 100px; /* reduce max-width to 22.5px (30% of 75px) */
+  padding-left: 12px; /* reduce padding-left to 12px */
+  padding-bottom: 6px; /* reduce padding-bottom to 6px */
+  object-fit: contain;
     
+  }
+  .container{
+    overflow: hidden;
   }
   nav ul {
     list-style: none;
@@ -112,7 +115,7 @@ body {
   }
   
   .suit-item {
-    background-color: chocolate;
+    background-color: #f9b001;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -163,7 +166,7 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: #f9b001;
     color: #fff;
     padding: 20px 0;
     text-align: center;
