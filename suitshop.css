@@ -62,7 +62,7 @@ body {
   .nav a {
     padding: 10px 15px;
     text-decoration: none;
-    color: #f9b001;
+    color: white;
     margin: 0 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
