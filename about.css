@@ -9,14 +9,14 @@ body {
   }
   header {
     background-color: white;
-    padding: 20px 0;
+    padding: 6px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   .about{
-    color: chocolate;
+    color: #f9b001;
   }
   .cart{
-    background-color: chocolate;
+    background-color: #f9b001;
     padding: 10px;
   }
   a{
@@ -24,17 +24,21 @@ body {
     text-decoration: none;
   }
   a:hover{
-    color: chocolate;
+    color: #f9b001;
   }
   .logo {
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .logos{
-    max-width: 75px;
-    padding-left: 40px;
-    padding-bottom: 20px;
+    max-width: 100px; /* reduce max-width to 22.5px (30% of 75px) */
+  padding-left: 12px; /* reduce padding-left to 12px */
+  padding-bottom: 6px; /* reduce padding-bottom to 6px */
+  object-fit: contain;
     
+  }
+  .container{
+    overflow: hidden;
   }
   nav ul {
     list-style: none;
@@ -53,41 +57,32 @@ body {
     color: #333;
     font-weight: bold;
   }
-  .content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-  }
-  .About{
-    display: block;
-    width: 50%;
-    justify-content: left;
-    padding: 20px;
-
-  }
-  .About h2{
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  .About p{
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 10px;
-  }
-  .Model{
-    width: 50%;
+  .Content {
     display: flex;
-    background-color: blue;
+    flex-wrap: wrap;
+    width: 100%;
   }
-  .Model img{
-        width: 400px;
-        height: auto;
-        margin-bottom: 20px;
-
-
-
-
-
+  
+  .About {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .Model {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Model img {
+    width: 100%; /* make the image take up the full width of the .Model div */
+    height: auto;
+    margin-bottom: 0;
+  }
+  footer {
+    background-color: #f9b001;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
   }
