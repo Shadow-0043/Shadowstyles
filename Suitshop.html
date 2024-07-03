@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Styles</title>
+    <link rel="stylesheet" href="suitshop.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="image/SHADOW.png" alt="Logo">
+        </div>
+        <h1>Shadow Styles</h1>
+        <div class="nav">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#" class="nav-button">Cart</a>
+        </div>
+      </header>
+    
+      <div class="menu">
+        <div class="close">X</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+    
+      <div class="container">
+        <div class="card">
+          <img src="image/Yellow-and-White-Tuxedo-Groom-Wedding-Prom-Suit-from-Gentlemansguru.com_.webp" alt="Gold Leather Suit">
+          <h3>Gold Leather Suit</h3>
+          <p class="price">$ 69.99</p>
+        </div>
+        <div class="card">
+          <img src="image/3-Piece-Burgundy-Tuxedo-Groom-Wedding-Prom-Suit-from-Gentlemansguru.com_-1.webp" alt="Wine Leather Suit">
+          <h3>Wine Leather Suit</h3>
+          <p class="price">$ 69.99</p>
+        </div>
+        <div class="card">
+          <img src="image/Mens-Navy-Blue-Tuxedo-Groom-Wedding-Prom-Suit-from-Gentlemansguru.com_.webp" alt="Blue Leather Suit">
+          <h3>Blue Leather Suit</h3>
+          <p class="price">$ 69.99</p>
+        </div>
+        <div class="card">
+          <img src="image/Mens-Black-Double-Breasted-Tuxedo-Groom-Prom-Wedding-Suit-from-Gentlemansguru.Com_.webp" alt="Black Leather Suit">
+          <h3>Black Leather Suit</h3>
+          <p class="price">$ 69.99</p>
+        </div>
+        <div class="card">
+          <img src="image/Mens-Emerald-Green-Tuxedo-Wedding-Groom-Prom-Suit-from-Gentlemansguru.Com_.webp" alt="Green Leather Suit">
+          <h3>Green Leather Suit</h3>
+          <p class="price">$ 69.99</p>
+        </div>
+        <div class="card">
+          <img src="image/Mens-Burnt-Orange-Tuxedo-Wedding-Groom-Prom-Suit-from-Gentlemansguru.com_-1.webp" alt="Brown Leather Suit">
+          <h3>Brown Leather Suit</h3>
+          <p class="price">$ 69.99</p>
+        </div>
+      </div>
+    
+      <div class="footer">
+        <p>&copy; 2023 Shadow Styles. All rights reserved.</p>
+      </div>
+      <script>
+        const navButton = document.querySelector('.nav-button');
+        const menu = document.querySelector('.menu');
+        const close = document.querySelector('.close');
+    
+        navButton.addEventListener('click', () => {
+          menu.style.display = 'block';
+        });
+    
+        close.addEventListener('click', () => {
+          menu.style.display = 'none';
+        });
+      </script>
+</body>
+</html>
